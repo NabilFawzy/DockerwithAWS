@@ -8,7 +8,7 @@ services:
       - ./.env
     depends_on:
       - mongo
-      - postgres
+      # - postgres
   mongo:
     image: mongo
     restart: always
@@ -50,5 +50,5 @@ services:
   #     POSTGRES_PASSWORD: example
 volumes:
   mongo-db:
-  postgres-db:
+  # postgres-db:
 
