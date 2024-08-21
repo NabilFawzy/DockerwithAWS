@@ -54,7 +54,7 @@ mongoose
    
 app.get('/',(req,res)=>{
     redisClient.set('product',"test products...");
-    res.send('<h1>Hello World test wdww</h1>')
+    res.send('<h1>Hello, It is a running docker using AWS </h1>')
 });
 
 app.get('/data',async (req,res)=>{
